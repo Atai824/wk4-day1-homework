@@ -1,15 +1,12 @@
-/* racing.less – конвертация stylecss.png в LESS */
-
 @import "colors.less";
 @import "fonts.less";
 
-/* общий mixin для блоков шириной 100% и с float:left */
 .full-block-left() {
     width: 100%;
     float: left;
 }
 
-/* глобальные стили */
+
 * {
     box-sizing: border-box !important;
     transition: ease all 0.5s;
@@ -19,27 +16,30 @@ body {
     width: 100%;
     height: 100%;
     color: @body-text;
-    .font-main(1em, normal, 1.80857);
+    .font-main();
     overflow-x: hidden;
 }
 
-/* красная полоса сверху: RACING BOOTS INC */
+.layout_padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .collection_text {
     .full-block-left();
     color: @white;
     text-align: center;
-    .font-display(3em, bold);
+    .font-display();
     background-color: @brand-red;
-    padding: 30px 0;
+    padding: 15px 0;
 }
 
-/* основной блок */
 .about_main {
 
-    /* блок "2023 Collection" */
+
     .collection_section {
         .full-block-left();
-        margin-top: 40px;
+        margin-top: 20px;
 
         .container {
 
@@ -47,6 +47,7 @@ body {
             .full-block-left();
             font-size: 2em;
             color: @heading-color;
+            font-weight: 700;
         }
 
         .consectetur_text {
@@ -54,30 +55,27 @@ body {
             font-size: 1.2em;
             color: @heading-color;
             font-weight: 400;
-            margin-left: 0px;
+            margin-left: 0;
             padding-bottom: 30px;
         }
         }
     }
 
-    /* блок с кроссовком и текстом справа */
-    .collection_section_3 {
+    .collectipn_section_3 {
         .full-block-left();
-        padding-top: 0px;
+        padding-top: 0;
 
         .container {
 
-
             .racing_shoes {
                 .full-block-left();
-                    background-color: @card-bg;
-                    height: auto;
-                    padding-top: 70px;
-                    padding-bottom: 100px;
-                    margin-bottom: 100px;
-                    background-size: 100%;
+                background-color: @card-bg;
+                height: auto;
+                padding-top: 70px;
+                padding-bottom: 100px;
+                margin-bottom: 40px;
+                background-size: 100%;
 
-                /* левая колонка с картинкой */
                 .shoes-img3 {
                     .full-block-left();
                     text-align: center;
@@ -88,41 +86,41 @@ body {
                 }
                 }
 
-                /* правый текст "On Sale! JOGGING SHOES" */
                 .sale_text {
                     .full-block-left();
                     font-size: 3em;
                     color: @brand-red;
-                    line-height: 75px;
+                    line-height: 1.2;
                 }
 
                 .number_text {
                     .full-block-left();
                     font-size: 3em;
                     color: @brand-red;
-                    line-height: 75px;
+                    line-height: 1.2;
                 }
 
                 .seemore {
                     width: 80%;
                     height: 50px;
-                    color: @white;
                     background-color: @brand-red;
+                    color: white;    
                     font-size: 1.1em;
                     margin-top: 35px;
-                    border: none;
+                    border: 2px solid black;
                 }
             }
         }
     }
 }
-    /* нижний красный футер */
+
 .copyright {
     .full-block-left();
     font-size: 1em;
     color: @white;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 0;
     background-color: @brand-red;
     font-family: @font-main;
+    margin-top: 20px;
 }

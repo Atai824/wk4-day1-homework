@@ -1,7 +1,4 @@
-/* racing.less – конвертация stylecss.png в LESS */
 /* colors */
-/* fonts.less – шрифты и типографика */
-/* -------- Импорт шрифтов (как в stylecss.png) -------- */
 @font-face {
   font-family: 'Poppins';
   font-style: italic;
@@ -135,10 +132,6 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/syncopate/v24/pe0pMIuPIYBCpEV5eFdKvtKaAw.ttf) format('truetype');
 }
-/* Mixin для обычного текста (как body из PNG) */
-/* Mixin для заголовка RACING BOOTS INC */
-/* общий mixin для блоков шириной 100% и с float:left */
-/* глобальные стили */
 * {
   box-sizing: border-box !important;
   transition: ease all 0.5s;
@@ -153,7 +146,10 @@ body {
   line-height: 1.80857;
   overflow-x: hidden;
 }
-/* красная полоса сверху: RACING BOOTS INC */
+.layout_padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .collection_text {
   width: 100%;
   float: left;
@@ -164,23 +160,19 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   background-color: #cf434f;
-  padding: 30px 0;
-}
-/* основной блок */
-.about_main {
-  /* блок "2023 Collection" */
-  /* блок с кроссовком и текстом справа */
+  padding: 15px 0;
 }
 .about_main .collection_section {
   width: 100%;
   float: left;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .about_main .collection_section .container .new_text {
   width: 100%;
   float: left;
   font-size: 2em;
   color: #0c0116;
+  font-weight: 700;
 }
 .about_main .collection_section .container .consectetur_text {
   width: 100%;
@@ -188,66 +180,64 @@ body {
   font-size: 1.2em;
   color: #0c0116;
   font-weight: 400;
-  margin-left: 0px;
+  margin-left: 0;
   padding-bottom: 30px;
 }
-.about_main .collection_section_3 {
+.about_main .collectipn_section_3 {
   width: 100%;
   float: left;
-  padding-top: 0px;
+  padding-top: 0;
 }
-.about_main .collection_section_3 .container .racing_shoes {
+.about_main .collectipn_section_3 .container .racing_shoes {
   width: 100%;
   float: left;
   background-color: #eae7e7;
   height: auto;
   padding-top: 70px;
   padding-bottom: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   background-size: 100%;
-  /* левая колонка с картинкой */
-  /* правый текст "On Sale! JOGGING SHOES" */
 }
-.about_main .collection_section_3 .container .racing_shoes .shoes-img3 {
+.about_main .collectipn_section_3 .container .racing_shoes .shoes-img3 {
   width: 100%;
   float: left;
   text-align: center;
 }
-.about_main .collection_section_3 .container .racing_shoes .shoes-img3 img {
+.about_main .collectipn_section_3 .container .racing_shoes .shoes-img3 img {
   margin-top: 4em;
   width: 70%;
 }
-.about_main .collection_section_3 .container .racing_shoes .sale_text {
+.about_main .collectipn_section_3 .container .racing_shoes .sale_text {
   width: 100%;
   float: left;
   font-size: 3em;
   color: #cf434f;
-  line-height: 75px;
+  line-height: 1.2;
 }
-.about_main .collection_section_3 .container .racing_shoes .number_text {
+.about_main .collectipn_section_3 .container .racing_shoes .number_text {
   width: 100%;
   float: left;
   font-size: 3em;
   color: #cf434f;
-  line-height: 75px;
+  line-height: 1.2;
 }
-.about_main .collection_section_3 .container .racing_shoes .seemore {
+.about_main .collectipn_section_3 .container .racing_shoes .seemore {
   width: 80%;
   height: 50px;
-  color: #ffffff;
   background-color: #cf434f;
+  color: white;
   font-size: 1.1em;
   margin-top: 35px;
-  border: none;
+  border: 2px solid black;
 }
-/* нижний красный футер */
 .copyright {
   width: 100%;
   float: left;
   font-size: 1em;
   color: #ffffff;
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px 0;
   background-color: #cf434f;
   font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
 }
